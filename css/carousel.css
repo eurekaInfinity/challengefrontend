@@ -1,0 +1,67 @@
+.carousel-container {
+    top:        10vh;
+    overflow:   hidden;
+    position:   relative;
+    width:      100%;
+    max-width:  1200px;
+    height:     90vh;
+    display:    flex;
+    display:    flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-container_sliders {
+    width:   10%;
+    height: 100%;
+    display: flex;
+    cursor:  pointer;
+}
+/* .carousel-container_sliders:hover {
+    cursor:  pointer;
+    outline: 2px solid blue ;
+} */
+#prevBtn {
+    cursor:      pointer;
+    width:       100%;
+    border:      none;
+    background:white;
+}
+.carousel-container_sliders:active > button img {
+    cursor:    pointer;
+    transform: scale(1.1);
+}
+#nextBtn {
+    cursor:       pointer;
+    width:        100%;
+    background: white;
+    border:       none;
+}
+.carousel-container_sliders:active > #nextBtn img {
+    transform: scale(1.1) !important;
+    transform: rotate(0deg);
+}
+.carousel-container_wrapper {
+    margin:    0 auto;
+    overflow:  hidden;
+    position:  relative;
+    width:     100%;
+    height:    90vh;
+    max-width: 1200px;
+    /* outline:2px solid blue ; */
+    display:    flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-container_wrapper_carousel-slide {
+    width:  100%;
+    height: 85vh;
+    float:  left;
+    /*outline: 2px solid blue;*/
+}
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
