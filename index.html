@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/img.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+</head>
+<body>
+    <main>
+        <header class="navbars_container">
+            <nav class="navbars_wrapper">
+                <img class="img_logo" src="./img/Logo-min.png" alt="logo">
+                <ul>
+                    <li> <a href="#"> Frontend Mentor </a> </li>
+                </ul>
+            </nav>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <img class="img_hamburguesa" src="./img/menu.png" alt="logo">
+            </label>
+        </header>
+        <section class="carousel-container">
+            <div class="carousel-container_sliders">
+                <button class="prevBtn" id="prevBtn"> <img src="./img/icons8-atrás-50.png" alt="back"> </button>
+            </div>
+            <div class="carousel-container_wrapper">
+                <div class="carousel-container_wrapper_carousel-slide">
+                    <iframe src="./frontMaster/qrCode/index.html" title="Qr" > </iframe>
+                </div>
+                <div class="carousel-container_wrapper_carousel-slide">
+                    <iframe src="https://developer.mozilla.org/es/docs/Web/CSS/CSS_animations/Using_CSS_animations" title="Qr" > </iframe>
+                </div>
+                <div class="carousel-container_wrapper_carousel-slide">
+                    <iframe src="https://developer.mozilla.org/es/docs/Web/CSS/CSS_animations/Using_CSS_animations" title="Qr" > </iframe>
+                </div>
+            </div>
+            <div class="carousel-container_sliders">
+                <button class="nextBtn" id="nextBtn"> <img src="./img/icons8-adelante-50.png" alt="back"> </button>
+            </div>
+        </section>
+    </main>
+    <script src="js/carousel.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+</body>
+</html>
