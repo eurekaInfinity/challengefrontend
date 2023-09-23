@@ -5,7 +5,9 @@
     --grayish_blue:  hsl(220, 15%, 55%);
     --dark_blue:     hsl(218, 44%, 22%);
     --font_size_title: 2em;
-    --font_size_text:  1.5em;
+    --font_size_text:  1em;
+    --font_weight_paragraph: 400;
+    --font_weight_title: 700;
 }
 * {
     margin:     0;
@@ -13,10 +15,10 @@
     box-sizing: border-box;
 }
 body {
-    font-family:     'Inter';
+    font-family:     'Outfit';
     font-size:       15px;
     line-height:     1.5;
-    color:          #333; /* Color de texto predeterminado */
+    color:          var(--dark_blue); /* Color de texto predeterminado */
     display:         flex;
     justify-content: center;
     align-items:     center;
@@ -29,17 +31,16 @@ main {
     align-items:    center;
     flex-direction: column;
     width:          90%;
-    /*height:       90vh;*/
-    max-width:      500px;
-    padding:        1% 0.3% 5% 0.3%;
+    max-width:      300px;
+    padding:        1% 0.3% 2% 0.3%;
     border-radius:  20px;
-    gap:            2rem;
+    gap:            1rem;
     box-shadow:   rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 section {
-    /* outline:       2px solid red; */
     width:         93%;
+    max-height:    350px;
     height:        40%;
     border-radius: 10px;
 }
@@ -56,51 +57,50 @@ img {
 }
 
 hgroup {
-    /* outline: 2px solid red; */
-    width: 93%;
-    display: flex;
+    width:          93%;
+    display:        flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap:            1rem;
     /* text-wrap: balance; */
 }
 
-h1 {
-    color: #363C4F;
-    font-size: calc(var(--font_size_title) + (32 - 30) * ((100vw - 320px) / (1920 - 320))); /* Fórmula de tipografía fluida */
-    font-weight: 900;
-    text-align: center;
-    letter-spacing: 0px;
-    word-spacing: 1px;
-    white-space: normal; 
-    line-height: 1.5;
-    vertical-align: middle;
-    text-overflow: ellipsis;
-}
-
 h2 {
-    color: #9B9EA3;
-    font-size: calc(var(--font_size_text) + (26 - 24) * ((100vw - 320px) / (1920 - 320))); /* Fórmula de tipografía fluida */
-    font-weight: 600;
+    color: var(--dark_blue);
+    font-size:   1.5em; 
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
     text-align: center;
     letter-spacing: 0px;
-    word-spacing: 5px;
+    word-spacing: 0px;
     white-space: normal; 
-    line-height: 1.5;
+    line-height: 1.1;
     vertical-align: middle;
     text-overflow: ellipsis;
 }
 
-@media (max-width: 900px) {
+h6 {
+    color: var(--grayish_blue);
+    font-size: var(--font_size_text); 
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0px;
+    word-spacing: 0.3px;
+    white-space: normal; 
+    line-height: 1.2;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 375px) {
     main {
         padding:  3% 0.3% 5% 0.3%;
     }
-
     h1 {
         font-size: calc(24px + (28 - 24) * ((100vw - 320px) / (1920 - 320)));
     }
-
     h2 {
-        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+        font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
     }
     /* Estilos para pantallas pequeñas */
 }
