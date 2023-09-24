@@ -1,0 +1,15 @@
+* {
+    margin:     0;
+    padding:    0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Mobile: 375px;
+    --Desktop: 1440px;
+    --primary_light_red: hsl(0, 100%, 67%);
+    --primary_orangey_yellow: hsl(39, 100%, 56%);
+    --primary_green_teal: hsl(166, 100%, 37%);
+    --primary_cobalt_blue: hsl(234, 85%, 45%);
+    
+}
