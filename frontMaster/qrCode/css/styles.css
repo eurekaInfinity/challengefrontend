@@ -64,7 +64,7 @@ hgroup {
     /* text-wrap: balance; */
 }
 
-h1 {
+.title {
     color: var(--dark_blue);
     font-size:   1.4em; 
     font-weight: 700;
