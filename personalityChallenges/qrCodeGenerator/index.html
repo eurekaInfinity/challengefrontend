@@ -12,9 +12,11 @@
 <body>
     <main>
             <section>
-                <figure>
-                    <img src="./img/image-qr-code.png" alt="qr code frontendmentor"/>
-                <figure>
+                <div id="qrcode" class="qrCode">
+
+                </div>
+                <input type="text" id="url" placeholder="Ingresa la url" >
+                <button onclick="generateQR()"> Generar Código QR </button>
             </section>
             <hgroup>
                 <h2> 
@@ -25,5 +27,6 @@
                 </h6>
             </hgroup>
     </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>
