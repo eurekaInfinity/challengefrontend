@@ -1,6 +1,6 @@
 :root {
-    --Mobile:                   375px;
-    --Desktop:                  1440px;
+    --mobile:                   375px;
+    --desktop:                  1440px;
     --primary_light_red:      hsl(0, 100%, 67%);
     --primary_orangey_yellow: hsl(39, 100%, 56%);
     --primary_green_teal:     hsl(166, 100%, 37%);
