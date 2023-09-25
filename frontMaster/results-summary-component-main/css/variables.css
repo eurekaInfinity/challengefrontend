@@ -1,15 +1,27 @@
-* {
-    margin:     0;
-    padding:    0;
-    box-sizing: border-box;
-}
-
 :root {
-    --Mobile: 375px;
-    --Desktop: 1440px;
-    --primary_light_red: hsl(0, 100%, 67%);
+    --Mobile:                   375px;
+    --Desktop:                  1440px;
+    --primary_light_red:      hsl(0, 100%, 67%);
     --primary_orangey_yellow: hsl(39, 100%, 56%);
-    --primary_green_teal: hsl(166, 100%, 37%);
-    --primary_cobalt_blue: hsl(234, 85%, 45%);
-    
+    --primary_green_teal:     hsl(166, 100%, 37%);
+    --primary_cobalt_blue:    hsl(234, 85%, 45%);
+    --secundary_light_red:    #FFF6F6;
+    --secundary_light_yellow: #FFFBF2;
+    --secundary_light_green:  #F2FBFA;
+    --secundary_light_cobalt: #F3F3FD; 
+    --light_slate_blue:       hsl(252, 100%, 67%);
+    --light_royal_blue:       hsl(241, 81%, 54%);
+    --violet_blue  :          hsla(256, 72%, 46%, 1);
+    --persian_blue :          hsla(241, 72%, 46%, 0);
+    --white:                  hsl(0, 0%, 100%);
+    --pale_blue:              hsl(221, 100%, 96%);
+    --light_lavender:         hsl(241, 100%, 89%);
+    --dark_gray_blue:         hsl(224, 30%, 27%);
+    --dark_gray_light:          #C3CCD1;
+    --font_size:                18px;
+    --weight_500:               500;
+    --weight_700:               700;
+    --weight_800:               800;
+    --border_radius_stats:      10px;
+    --border_radius_wrapper:    16px;
 }
