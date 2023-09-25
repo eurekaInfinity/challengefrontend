@@ -1,0 +1,29 @@
+@import 'variables.css';
+
+.red {
+    color: var(--primary_light_red);
+}
+
+.yellow {
+    color: var(--primary_orangey_yellow);
+}
+.green {
+    color: var(--primary_green_teal);
+}
+.cobalt{
+    color: var(--primary_cobalt_blue);
+}
+.background_red_light {
+    background: var(--secundary_light_red);
+}
+
+.background_yellow_light {
+    background: var(--secundary_light_yellow);
+}
+.background_green_light {
+    background: var(--secundary_light_green);
+}
+
+.background_cobalt_light {
+    background: var(--secundary_light_cobalt);
+}

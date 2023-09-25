@@ -5,34 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="./css/layout.css">
+  <link rel="stylesheet" type="text/css" href="./css/direction.css">
+  <link rel="stylesheet" type="text/css" href="./css/components.css">
+  <link rel="stylesheet" type="text/css" href="./css/color.css">
+  <link href="https://fonts.google.com/specimen/Hanken+Grotesk" rel="stylesheet">
   <title>Frontend Mentor | Results summary component</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 45%, 44%); bottom: 0;}
   </style>
 </head>
-<body>
-  <main class="container">
-    <section class=""> 
-      <h6 id="yourResult"> Your Result </h6>
-      <div>
-        <h2 id="result"> 76 </h2>
-        <h6 id="total">  of 100 </h6>
-      </div>
-      <hgroup>
-        <h2 id="great">     Great </h2>
-        <h6 id="paragraph"> You scored higher than 65% of the people who hace taken these tests. </h6>
+<body class="container center vertical space_1rem">
+  <main class="wrapper center horizontal" >
+    <section class="statistics display_flex align_items_center vertical "> 
+      <h3 id="yourResult"> {yourresult}</h3>
+      <hgroup class="statistics_radial center vertical ">
+        <h1 id="result"> {result} </h1>
+        <p id="total">  {total} </p>
+      </hgroup>
+      <hgroup class="observation center vertical space_1rem">
+        <h2 id="great"> {great} </h2>
+        <p  id="paragraph"> 
+          {paragraph} 
+        </p>
       </hgroup>
     </section>
-    <section> </section>
+    <section class="statistics-block display_flex  vertical"> 
+      <h1 class="title_summary"> {title_summary} </h1>
+      <div style="margin: 0 0 -10% 0;" class="display_flex vertical space_0_5rem">
+          <div class="stats display_flex horizontal align_items_center space_1rem background_red_light"> 
+            <div class="center horizontal red space_0_5rem">
+              <img src={icon_reaction}> 
+              <h3 id="reaction_category"> {reaction} </h3>
+            </div>
+            <p class="porcentage"> <span> {score_reaction} </span> / 100 </p>
+          </div>
+          <div class="stats display_flex horizontal align_items_center space_1rem background_yellow_light"> 
+            <div class="center horizontal yellow space_0_5rem">
+              <img src={icon_memory}> 
+              <h3> {memory} </h3>
+            </div>
+            <p class="porcentage"> <span> {score_memory} </span> / 100 </p>
+          </div>
+          <div class="stats display_flex horizontal align_items_center space_1rem background_green_light">
+            <div class="center horizontal green space_0_5rem">
+              <img src={icon_verbal}> 
+              <h3> {verbal} </h3>
+            </div>
+            <p class="porcentage"> <span> {score_verbal} </span> / 100 </p>
+          </div>
+          <div class="stats display_flex horizontal align_items_center space_1rem background_cobalt_light">
+            <div class="center horizontal cobalt space_0_5rem">
+              <img src={icon_visual}> 
+              <h3> {visual} </h3>
+            </div>
+            <p class="porcentage">  <span>{score_visual}</span> / 100 </p>
+          </div>
+      </div>
+      <button class="button"> {button} </button>
+    </section>
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Javier Andrés Causil Martínez</a>.
   </div>
-  <script src="./js/main.js"> </script>
+  <script src="./js/main.js" type="module"> </script>
 </body>
 </html>

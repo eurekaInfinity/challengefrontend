@@ -1,0 +1,33 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display_flex {
+    display: flex;
+}
+.justify_content_center {
+    justify-content: center;
+}
+
+.align_items_center {
+    align-items: center;
+}
+.vertical {
+    flex-direction: column;
+}
+.horizontal {
+    flex-direction: row;
+}
+.space_1rem {
+    gap:1rem;
+}
+.space_0_5rem {
+    gap:0.5rem;
+}
+
+@media (max-width: 375px) {
+    .horizontal {
+        flex-direction: column;
+    }
+}
