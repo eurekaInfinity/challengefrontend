@@ -2,7 +2,6 @@ import data from "../data.json" assert { type: 'json' };
 
 console.log("data",data);
 
-
 const content = {};
 content.yourresult = `Your Result`;
 content.result = `76`;

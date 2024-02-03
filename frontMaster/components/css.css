@@ -1,0 +1,28 @@
+.body {
+    max-width: 500px;
+    width: 50%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.name {
+    flex: 1 0 10px;
+    outline: 2px solid blue;
+}
+
+.email {
+    flex: 1 0 10px;
+    outline: 2px solid blue;
+}
+
+
+.button {
+    flex: 1 0 auto;
+    outline: 2px solid blue;
+    min-height: 70px;
+}
