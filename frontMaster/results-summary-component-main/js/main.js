@@ -1,11 +1,19 @@
 function changeText (listID, data) {
-    for (let i = 0; i <= listID.length; i++){
-            let id_0 = listID[i][0];
-            let id_1 = listID[i][1];
-            let id_2 = listID[i][2];
-            document.getElementById(id_0).src = `${data[i].icon}`;
-            document.getElementById(id_1).innerHTML = `${data[i].category}`;
-            document.getElementById(id_2).innerHTML = `${data[i].score}`;
+    for (let i = 0; i <= listID.length + 1; i++){
+        let id = listID[i].id
+        let atr = listID[i].atr
+        console.log(i,"i%3: ",i%3, data[i%3].category, data[i%3].icon, data[i%3].score)
+        if (atr === "src") {
+            document.getElementById(id).src = `${data[i%3].icon}`;
+        } else if (atr === "category") {
+            document.getElementById(id).innerHTML = `${data[i%3].category}`;
+        } else {
+                document.getElementById(id).innerHTML = `${data[i%3].score}`;
+        }
+
+            // document.getElementById(id).src = `${data[i].icon}`;
+            // document.getElementById(id).innerHTML = `${data[i].category}`;
+            // document.getElementById(id).innerHTML = `${data[i].score}`;
     }
 }
 
@@ -14,10 +22,10 @@ const xhttpr = new XMLHttpRequest()
 xhttpr.onload = function () {
     if (this.readyState == 4 && this.status == 200) {
         const id = [
-            ['icon_reaction', 'reaction_category', 'score_reaction'], 
-            ['icon_memory', 'memory', 'score_memory' ], 
-            ['icon_verbal', 'verbal', 'score_verbal'],
-            ['icon_visual', 'visual', 'score_visual']
+            { id:'icon_reaction', atr: "src" }, {id:'reaction_category', atr: "category"}, {id:'score_reaction',atr:"score"},
+            { id:'icon_memory', atr: "src" },   {id:'memory',            atr: "category"}, {id:'score_memory',  atr:"score"},
+            { id:'icon_verbal', atr: "src" },   {id:'verbal',            atr: "category"}, {id:'score_verbal',  atr:"score"},
+            { id:'icon_visual', atr: "src" },   {id:'visual',            atr: "category"}, {id:'score_visual',  atr:"score"},
         ]
         let data = JSON.parse(this.responseText)
         const yourResult = document.getElementById('yourResult');
